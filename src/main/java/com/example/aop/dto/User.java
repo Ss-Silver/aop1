@@ -1,4 +1,4 @@
-package dto;
+package com.example.aop.dto;
 
 public class User {
     private String id;
@@ -27,5 +27,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", pw='" + pw + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
