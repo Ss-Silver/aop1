@@ -14,8 +14,8 @@ public class ParameterAop {
     @Pointcut("execution(* com.example.aop.controller..*.*(..))")
     // controller아래 있는 모든 파일에 적용
     private void cut() {
-
     }
+
     @Before("cut()")
     public void before(JoinPoint joinPoint) {
         //Method이름 출력

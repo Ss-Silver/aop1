@@ -15,6 +15,10 @@ public class RestApiController {
     @PostMapping("/post")
     public User post(@RequestBody User user) {
         return user;
+    }
+
+    public void delete(){
 
     }
+
 }
